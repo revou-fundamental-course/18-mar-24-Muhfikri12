@@ -1,0 +1,183 @@
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .page1 {
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  position: relative;
+  background-color: azure;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+  border-bottom: 1px solid;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  align-items: center;
+  background-color: rgb(234, 220, 245);
+}
+
+.navbar img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.navbar .navbarNav {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.navbar .navbarNav a {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  color: black;
+  background-color: aquamarine;
+}
+
+.navbar .navbarNav a:hover {
+  color: blueviolet;
+}
+
+.container-header {
+  text-align: center;
+  /* margin-top: 4rem; */
+}
+.container-header h1 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-style: italic;
+  padding-top: 5rem;
+}
+
+.slider img {
+  width: 40rem;
+  height: 20rem;
+  transition: 0.2s;
+  border: 1px solid;
+  border-radius: 1rem;
+}
+
+.icon {
+  border: 2px solid;
+  border-radius: 50%;
+  /* padding: 2px */
+}
+
+.user {
+  display: flex;
+}
+
+.user p {
+  margin: auto 5px;
+  font-size: 0.95rem;
+}
+
+.coment blockquote {
+  font-style: italic;
+  font-size: 0.8rem;
+  width: 25rem;
+  margin: 5px 2.1rem;
+}
+
+.coment {
+  margin-left: 1rem;
+}
+.user img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.container-section {
+  margin: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-form {
+  border: 1px solid;
+  border-radius: 1rem;
+  /* background-color: rgb(78, 152, 236); */
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur (30px);
+  max-height: 370px;
+}
+
+.register-form {
+  margin: 1rem 0.5rem;
+}
+
+form p {
+  margin: 1rem 0.5rem 0;
+  font-size: 0.7rem;
+  color: red;
+}
+
+.register-form input {
+  width: 17rem;
+  height: 2.5rem;
+  padding: 6px;
+}
+form .register-form {
+  margin-top: 0;
+}
+
+.register-form .button {
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+form sup {
+  color: red;
+}
+.register-form input:hover {
+  color: blueviolet;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content-form {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .content-img {
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+  }
+}

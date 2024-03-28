@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project RevoU</title>
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page1" id="home">
+      <!-- Header Navbar -->
+      <header class="header">
+        <nav class="navbar">
+          <img src="img/revou_logo.png" alt="logo" />
+
+          <div class="navbarNav">
+            <a href="#home">Home</a>
+            <a href="#pack">Our Package</a>
+            <a href="#call">Call Us</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Container Header  -->
+      <main class="container-header">
+        <h1>HASANAH TRAVEL</h1>
+        <p>"Membuat Kenangan yang Tak Terlupakan di Setiap Perjalanan"</p>
+      </main>
+
+      <!-- Container Section -->
+      <section class="container-section">
+        <div class="content-img">
+          <div class="slider">
+            <img src="img/panorama1.jpg" alt="gambar 1" />
+
+            <div class="coment">
+              <div class="user">
+                <img class="icon" src="img/icon/user.png" alt="icon" />
+                <p>Adrian Mahesa</p>
+              </div>
+
+              <blockquote>
+                "Sangat menyenangkan berlibur dengan Hasanah Travel sangat aman
+                dan nyaman."
+              </blockquote>
+            </div>
+          </div>
+          <div class="slider">
+            <img src="img/panorama2.jpg" alt="gambar 1" />
+
+            <div class="coment">
+              <div class="user">
+                <img class="icon" src="img/icon/user.png" alt="icon" />
+                <p>Fikri Maulana</p>
+              </div>
+
+              <blockquote>
+                "Dengan Hasanah Travel kita bisa menikmati pelayanan yang
+                istimewa dengan harga yang terjangkau"
+              </blockquote>
+            </div>
+          </div>
+          <div class="slider">
+            <img src="img/panorama3.jpg" alt="gambar 1" />
+
+            <div class="coment">
+              <div class="user">
+                <img class="icon" src="img/icon/user.png" alt="icon" />
+                <p>Rizki Aditia</p>
+              </div>
+
+              <blockquote>"Hasanah is best choice to Travel"</blockquote>
+            </div>
+          </div>
+          <div class="slider">
+            <img src="img/panorama4.jpg" alt="gambar 1" />
+
+            <div class="coment">
+              <div class="user">
+                <img class="icon" src="img/icon/user.png" alt="icon" />
+                <p>Nurul Aulia</p>
+              </div>
+
+              <blockquote>
+                "Dengan Hasanah jadi lebih mudah dalam setiap perjalanan"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-form">
+          <div class="form-header">
+            <h3>Contact Us</h3>
+          </div>
+
+          <form
+            action="#"
+            class="form"
+            method="post"
+            name="formfill"
+            onsubmit="return validation()"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+          >
+            <p id="result"></p>
+
+            <div class="register-form">
+              <label for="name" class="name">Name:<sup>*</sup> </label>
+              <br />
+              <input
+                id="name"
+                type="text"
+                name="Username"
+                placeholder="First and last name"
+              />
+            </div>
+
+            <div class="register-form">
+              <label for="email" class="email"
+                >Email Address:<sup>*</sup>
+              </label>
+              <br />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="example@email.com"
+              />
+            </div>
+
+            <div class="register-form">
+              <label for="number" class="select"
+                >Nomor Whatsapp:<sup>*</sup></label
+              >
+              <br />
+              <input id="number" type="number" name="number" />
+            </div>
+
+            <div class="register-form">
+              <input type="submit" value="Submit" class="button" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="page2"></div>
+
+    <script src="./js/script.js"></script>
+
+    <!-- Icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
